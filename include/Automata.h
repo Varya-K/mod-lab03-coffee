@@ -1,3 +1,4 @@
+// Copyright 2022 UNN-IASR
 #pragma once
 #include <string>
 #include <vector>
@@ -8,7 +9,8 @@ enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
 class Automata {
  private:
     int cash;
-    std::vector <std::string> menu = { "Espresso", "Cappuccino", "Americano", "Macchiato", "Mocha", "Latte", "Flat White" };
+    std::vector <std::string> menu = { "Espresso", "Cappuccino",
+                                      "Americano", "Macchiato", "Mocha", "Latte", "Flat White" };
     std::vector <int> prices = {120, 200, 180, 220, 210, 160, 250};
     STATES state;
     int num_of_chousen_drink;
