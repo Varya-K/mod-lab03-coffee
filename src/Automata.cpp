@@ -76,7 +76,8 @@ void Automata::choice(int num_of_choice) {
             state = CHECK;
             num_of_chousen_drink = num_of_choice-1;
             std::cout << "You have chosen " << menu[num_of_choice-1]
-                      << " for " << prices[num_of_choice - 1] << " rub." << std::endl;
+                      << " for " << prices[num_of_choice - 1]
+                      << " rub." << std::endl;
             check();
         }
     } else {
